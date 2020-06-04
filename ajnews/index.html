@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Al Jazeera</title>
+<style>
+body {
+  overflow: hidden;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+  $(window).resize(function(){
+    $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+  });
+});
+</script>
+</head>
+<body>
+
+<iframe id="video" src="https://www.youtube.com/embed/2EppLNonncc?autoplay=1&vq=hd1080" " frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen>
+</iframe>
+</body>
+</html>
